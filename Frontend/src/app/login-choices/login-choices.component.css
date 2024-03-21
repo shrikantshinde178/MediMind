@@ -1,0 +1,38 @@
+.center-text {
+    text-align: center;
+}
+
+/* Example effect */
+.h2-effect {
+    color: rgba(26, 2, 205, 0.422); /* Blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.228); /* Text shadow */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.h2-effect:hover {
+    color: #5b5b5b; /* Orange color on hover */
+}
+
+ /* Custom CSS for centering and styling cards */
+ .card {
+    margin-bottom: 20px; /* Add some margin at the bottom of each card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow for a card-like appearance */
+  }
+
+  .card-title {
+    color: #333; /* Change the color of the card title */
+  }
+
+  .card-text {
+    color: #666; /* Change the color of the card text */
+  }
+
+  .btn-primary {
+    background-color: #007bff; /* Change the background color of the primary button */
+    border-color: #007bff; /* Change the border color of the primary button */
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3; /* Change the background color of the primary button on hover */
+    border-color: #0056b3; /* Change the border color of the primary button on hover */
+  }

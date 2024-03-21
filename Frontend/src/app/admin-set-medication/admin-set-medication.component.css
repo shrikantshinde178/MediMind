@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'); /* Font Awesome CSS */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 80%;
+    margin: 40px auto;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+h2 {
+    color: #28a745;
+    margin-top: 0; /* Ensure no margin above the heading */
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Form elements */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn {
+    color: white;
+    margin-top: 20px;
+    width: 25%;
+}
+
+/* Search Box */
+.wrap {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 20px 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 200px;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search-input:focus {
+    color: #00B4CC;
+}
+
+.search-icon {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #28a745;
+    background: #28a746b9;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-icon:hover {
+    background-color: #28a745;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .wrap {
+        position: relative;
+        margin-bottom: 20px; /* Add margin to create space between the search box and the heading */
+        text-align: right; /* Align the search box to the right */
+    }
+}
+
+span{
+    color: red;
+    font-weight: bolder;
+}
+
+.form-label{
+    margin-top: 15px;
+}
+
+/* Column layout for form labels */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+}

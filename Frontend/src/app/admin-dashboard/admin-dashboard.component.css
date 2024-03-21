@@ -1,0 +1,43 @@
+body {
+    padding-top: 56px; /* Adjust this value according to your navbar height */
+  }
+
+  @media (min-width: 992px) {
+    body {
+      padding-top: 0;
+    }
+  }
+
+  .setting-option{
+    justify-items: end;
+    margin-right: 10px;
+  }
+
+  span{
+    font-size: medium;
+  }
+
+  .logout-btn {
+    background-color: #f4433655; /* Red */
+    color: white;
+    padding: 10px 20px;
+    border: 1px rgb(138, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    bottom: auto;
+    right: 40px;
+    transition-duration: 0.4s;
+  }
+  
+  /* Hover effect */
+  .logout-btn:hover {
+    background-color: #cc0000; /* Darker red */
+  }
+  
+  #layoutSidenav_content{
+    margin-bottom: 50px;
+  }

@@ -1,0 +1,169 @@
+.sideBar {
+    width: 86px;
+    background: #E1E2ED;
+    height: 100vh;
+}
+
+.navIcon {
+    height: 28px;
+}
+
+.iconCursor {
+    cursor: pointer;
+}
+
+.iconContainer {
+    height: 32px;
+    width: 32px;
+    background: #fff;
+}
+
+/* body */
+.bodyContent {
+    width: calc(100vw - 648px);
+    background-color: #F4F5FE;
+}
+
+/* Body Right Content */
+.bodyRightContent {
+    width: 350px;
+    height: 100vh;
+}
+
+.rotateChevron {
+    transform: rotate(90deg);
+}
+
+.notifybtn {
+    position: relative;
+}
+
+.redDot {
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background: red;
+    right: 8px;
+    top: 8px;
+
+}
+
+.rightsidebar {
+    background: #EDEEF9;
+}
+
+.lightContainer {
+    height: 40px;
+    width: 40px;
+    background: #fff;
+}
+
+/* 
+    .dot {
+        height: 10px;
+        width: 10px;
+        background: rgb(0, 0, 0);
+    } */
+
+.searchInput {
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.searchInput:focus-visible {
+    outline: none;
+}
+
+input.searchInput::placeholder {
+    color: #cfd2ec;
+    vertical-align: middle;
+}
+
+.searchImg {
+    top: 7px;
+    right: 8px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.bell {
+    animation: shake 0.4s;
+}
+
+.bell:hover {
+    animation-iteration-count: infinite;
+}
+
+#cardBody {
+    border-radius: 16px;
+    background: linear-gradient(to right, #575958, #0d0c14);
+}
+
+.iconPic {
+    height: 36px;
+    width: 36px;
+}
+
+.dotBrand {
+    height: 10px;
+    width: 10px;
+}
+
+.dotBrandRed {
+    background: #DF1D09;
+}
+
+.dotBrandYellow {
+    background: #FFB205;
+}
+
+.dotBrandGreen {
+    background: #049D02;
+}

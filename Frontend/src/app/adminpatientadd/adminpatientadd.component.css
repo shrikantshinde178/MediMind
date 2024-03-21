@@ -1,0 +1,88 @@
+/* Custom styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 80%;
+    margin: 40px auto;
+    margin-bottom: 60px;
+  }
+  
+  .form-box {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    width: 40%;
+  }
+  
+  /* Additional styles for form elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #007bff;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-size: 14px;
+  }
+  
+  h3{
+    color: #0056b3;
+  }
+
+  .form-row{
+    margin-bottom: 20px;
+  }
+
+  .danger{
+    width: 40%;
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+  }
+
+  .danger:hover{
+    background-color: #d40419;
+    color: white;
+  }
