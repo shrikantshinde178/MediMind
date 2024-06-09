@@ -13,8 +13,8 @@ MediRemind March.2024 is a patient-caregiver connectivity and emergency assistan
 ## Technologies Used
 
 - **Frontend:** Angular
-- **Backend:** Java
-- **Integration:** G-Map API
+- **Backend:** Python
+- **Integration:** G-Map API, leaflet Open Source Map
 
 ### Contributions to MediRemind March.2024 are welcome! If you'd like to contribute, please follow these steps:
 
