@@ -1,0 +1,24 @@
+body {
+    padding-top: 56px; /* Adjust this value according to your navbar height */
+  }
+
+  @media (min-width: 992px) {
+    body {
+      padding-top: 0;
+    }
+  }
+
+  .setting-option{
+    justify-items: end;
+    margin-right: 10px;
+  }
+
+  span{
+    font-size: medium;
+  }
+  .reminder{
+    margin-bottom: 10px;
+    background-color: blue;
+    font-weight: 500;
+    color: white;
+  }

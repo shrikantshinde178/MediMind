@@ -1,0 +1,63 @@
+    <div class="container">
+      <h3 class="mb-1 mx-4 heading">Patient Registration Form</h3>
+      <div class="form-box" [formGroup]="patientForm">
+        <form>
+          <div class="form-group">
+            <label for="patientName">Patient Name</label>
+            <input type="text" class="form-control" id="patientName" placeholder="Enter patient's name" [formControl]="patientForm.controls.patientname" required>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4">
+            <label for="patientEmail">Email Id</label>
+            <input type="email" class="form-control" id="patientEmail" placeholder="Enter patient's email-id" [formControl]="patientForm.controls.emailid" required>
+          </div>
+          <div class="col-md-4">
+            <label for="patientUID">UID/Aadhar Number</label>
+            <input type="text" class="form-control" id="patientUID" placeholder="Enter unique ID" [formControl]="patientForm.controls.uid" required>
+          </div>
+          <div class="col-md-4">
+            <label for="patientMobile">Mobile</label>
+            <input type="tel" class="form-control" id="patientMobile" placeholder="Enter mobile number" [formControl]="patientForm.controls.mobile" required>
+          </div>
+        </div>
+          <div class="form-row">
+            <div class="col-md-4">
+              <label for="patientAge">Age</label>
+              <input type="number" class="form-control" id="patientAge" placeholder="Enter age" [formControl]="patientForm.controls.age" required>
+            </div>
+            <div class="col-md-4">
+                <label for="admittedDate">Admitted Date</label>
+                <input type="date" class="form-control" id="admittedDate" [formControl]="patientForm.controls.admitteddate" required>
+              </div>
+            <div class="col-md-4">
+              <label for="patientPincode">Pincode</label>
+              <input type="text" class="form-control" id="patientPincode" placeholder="Enter pincode" [formControl]="patientForm.controls.pincode" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="patientAddress">Address</label>
+            <textarea class="form-control" id="patientAddress" rows="3" placeholder="Enter address" [formControl]="patientForm.controls.address" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="submit()" >Register</button>
+          <button type="" class="btn danger" [routerLink]="['/adminDashboard']">Cancel</button>
+        </form>
+      </div>
+    </div>
+
+    <ng-template #templateDiv>
+      <div class="modal-header">
+        <h4 class="modal-title">Patient Details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Modal content goes here -->
+        <p>Patient Name: {{ patientForm.controls.patientname.value }}</p>
+        <p>Email ID: {{ patientForm.controls.emailid.value }}</p>
+        <!-- Other fields as needed -->
+      </div>
+      <div style="color: green; margin-bottom: 20px; margin-left: 80px; font-weight: 500;"> Patient registered successfully !</div>
+    </ng-template>
+  
