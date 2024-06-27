@@ -1,0 +1,153 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background-color: #f0f4f7; /* Light blue-gray background */
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.heading {
+    color: #25252aa5; /* Medical blue */
+    font-weight: 500;
+    font-size:large;
+    margin-top: 40px;
+    background-color: rgba(128, 128, 128, 0.305);
+    padding: 20px 20px;
+}
+
+.form-box {
+    background-color: #fff;
+    /* border: 1px solid #dde2e6; */
+    padding: 30px;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight:600;
+    color: #0551a2; /* Darker blue */
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Focus border color */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%; /* Adjust width to fit nicely next to each other */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-primary {
+    background-color: #1e56a8; /* Medical blue */
+    color: #fff;
+}
+
+button.btn-primary:hover {
+    background-color: #007bff; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.danger {
+    background-color: #bcbcbc57; /* Danger red */
+    margin-left: 20px;
+    
+}
+
+.danger:hover {
+    background-color: #bcbcbcae; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.modal-header,
+.modal-body {
+    padding: 20px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dde2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-title {
+    margin: 0;
+    color: #0f83f8; /* Medical blue */
+}
+
+.modal-body p {
+    margin-bottom: 10px;
+}
+
+.close {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #b52a3b; /* Darker red */
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    font-weight: 500;
+}

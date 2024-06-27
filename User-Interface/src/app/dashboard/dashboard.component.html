@@ -1,0 +1,419 @@
+<div class="d-flex">
+  <nav>
+    <div id="slideB" class="sideBar">
+      <div>
+        <div class="d-flex justify-content-center p-3 pt-4 pb-5">
+          <p class="m-0 mx-1 iconCursor dotBrand dotBrandRed rounded-5"></p>
+          <p class="m-0 iconCursor dotBrand dotBrandYellow rounded-5"></p>
+          <p class="m-0 mx-1 iconCursor dotBrand dotBrandGreen rounded-5"></p>
+        </div>
+        <div class="d-flex flex-column">
+          <!-- <div>
+            <a href="#">
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Notifications"
+                src="https://cdn-icons-png.flaticon.com/512/4407/4407079.png"
+                alt="house-door icon"
+              />
+            </a>
+          </div> -->
+          <!-- <div>
+            <a href="#">
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Call Ambulance"
+                src="../../assets/ambulance.png"
+                alt="bar-chart-line icon"
+              />
+            </a>
+          </div> -->
+          <!-- <div>
+            <a href="#">
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Connect With Hospital"
+                src="https://cdn-icons-png.freepik.com/512/2698/2698559.png"
+                alt="people icon"
+              />
+            </a>
+          </div> -->
+          <!-- <div>
+            <a href="#">
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Medication History"
+                src="https://www.freeiconspng.com/thumbs/history-icon-png/history-timeline-icon-33.png"
+                alt="envelope icon"
+              />
+            </a>
+          </div> -->
+          <!-- Help Icon with Dropdown -->
+          <div>
+            <a
+              href="#"
+              class="nav-link "
+              id="helpDropdown"
+              role="button"
+            >
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Get Emergency Help"
+                src="https://cdn-icons-png.flaticon.com/512/682/682055.png"
+                alt="help icon"
+              />
+            </a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+              <li>
+                <a class="dropdown-item" href="#" id="callAmbulance"
+                  >Call Ambulance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" id="callFireExtinguisher"
+                  >Call Fire Extinguisher</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" id="callOtherEmergency"
+                  >Other Emergency</a
+                >
+              </li>
+            </ul> -->
+          </div>
+          <!-- <div>
+            <a href="#">
+              <img
+                class="mx-4 my-3 navIcon"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Log Out"
+                src="https://cdn.iconscout.com/icon/free/png-256/free-logout-3178076-2678982.png?f=webp"
+                routerLink="/userLoginSignup"
+                alt="people icon"
+              />
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Body Content -->
+  <div class="bodyContent flex-fill">
+    <div class="d-flex justify-content-between align-items-center px-5 pt-4">
+      <div>
+        <p class="fw-bold fs-3 m-0">DashBoard</p>
+        <p class="fw-light">Recent updates</p>
+      </div>
+      <div>
+        <div
+          class="position-relative d-lg-inline-block d-none me-4 my-2 mb-3 d-none"
+        >
+          <img
+            class="position-absolute searchImg iconCursor"
+            src="https://cdn.dribbble.com/users/11533573/screenshots/18255711/media/6e161138478fb7a4e85566498904c8b3.png?resize=400x300&vertical=center"
+            style="height: 18px; width: auto"
+            alt="search"
+          />
+          <input
+            class="searchInput iconCursor shadow-sm ps-3 ms-md-5 mb-md-3 pe-md-5 ps-md-3"
+            type="search"
+            placeholder="Search Medicine"
+            aria-label="Search"
+          />
+        </div>
+        <img
+          class="iconCursor pb-1 d-lg-none d-inline"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseWidthExample"
+          aria-expanded="false"
+          aria-controls="collapseWidthExample"
+          src="/static_files/svgs/list-black.svg"
+          alt="list"
+        />
+      </div>
+    </div>
+    <!-- Row 1: Cards -->
+    <div class="row mx-auto px-4">
+      <div class="col-xl-3 col-md-6 col-sm-12 mb-sm-3">
+        <div class="m-1 p-3 shadow rounded-4 bg-white">
+          <!-- <div class="d-flex justify-content-between">
+                            <div class="dropdown">
+                                <a class="btn border-0" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img class="" src="https://cdn-icons-png.flaticon.com/512/9358/9358493.png" style="height: 30px; width: auto;"
+                                        alt="Three-dots icon">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="d-flex">
+                                            <img class="ps-2 iconCursor"
+                                                src="/static_files/svgs/three-dots-vertical.svg" alt="Envelope icon">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex">
+                                            <img class="ps-2 iconCursor"
+                                                src="/static_files/svgs/three-dots-vertical.svg" alt="Envelope icon">
+                                            <a class="dropdown-item" href="#">Action action</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex">
+                                            <img class="ps-2 iconCursor"
+                                                src="/static_files/svgs/three-dots-vertical.svg" alt="Envelope icon">
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+          <p class="m-0 pt-1">Morning</p>
+          <p class="fs-3 fw-bold pt-1">Omeprazole</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-12 mb-sm-3">
+        <div class="m-1 p-3 shadow rounded-4 bg-white">
+          <!-- <div class="d-flex justify-content-between">
+            <div class="dropdown">
+              <a
+                class="btn border-0"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class=""
+                  src="https://cdn-icons-png.flaticon.com/512/9358/9358493.png"
+                  style="height: 30px; width: auto"
+                  alt="Three-dots icon"
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <p class="m-0 pt-1">Afternoon</p>
+          <p></p>
+          <p class="fs-3 fw-bold pt-1">Azee 500</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-12 mb-sm-3">
+        <div class="m-1 p-3 shadow rounded-4 bg-white">
+          <!-- <div class="d-flex justify-content-between">
+            <div class="dropdown">
+              <a
+                class="btn border-0"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class=""
+                  src="https://cdn-icons-png.flaticon.com/512/9358/9358493.png"
+                  style="height: 30px; width: auto"
+                  alt="Three-dots icon"
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <p class="m-0 pt-1">Evening</p>
+          <p class="fs-3 fw-bold pt-1">Cinarest</p>
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-6 col-sm-12">
+        <div class="m-1 p-3 shadow rounded-4 bg-white">
+          <!-- <div class="d-flex justify-content-between">
+            <div class="dropdown">
+              <a
+                class="btn border-0"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class=""
+                  src="https://cdn-icons-png.flaticon.com/512/9358/9358493.png"
+                  style="height: 30px; width: auto"
+                  alt="Three-dots icon"
+                />
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Action action</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="d-flex">
+                    <img
+                      class="ps-2 iconCursor"
+                      src="/static_files/svgs/three-dots-vertical.svg"
+                      alt="Envelope icon"
+                    />
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+
+          <p class="m-0 pt-1">Night</p>
+          <p class="fs-3 fw-bold pt-1">citrizine, Omeprazole</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row 2: Chart -->
+    <div class="row mx-auto">
+      <div class="col">
+        <div class="d-flex flex-column pb-5">
+          <p class="fw mt-4  ml-4 fs-4">Medicine Store near you</p>
+          <div class="d-flex justify-content-center">
+            <div id="map" style="height: 400px; width: 95%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- g-map navigation start -->
+    <!-- <h1>Nearby Medical Stores</h1> -->
+    <!-- g-map navigation end -->
+    <!-- Email Content -->
+    <!-- <div>
+      <p class="fw-bold ml-3 fs-4">Recent Emails</p>
+      <div class="row gx-0 mx-0 mt-2">
+        <div class="col-12">
+          <div class="card shadow-sm p-3 ml-3 mb-3 mr-5 bg-body rounded-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://i0.wp.com/meadowbrookmcf.com/wp-content/uploads/2017/07/icon-email-icon-clip-art-at-clker-com-vector-qafaq-e-mail-icon-trace-0.png?ssl=1"
+                style="height: 20px; width: auto"
+                class="me-3"
+                alt="Email Icon"
+              />
+              <div>
+                <h5 class="card-title mb-0">John Doe</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="card shadow-sm p-3 ml-3 mr-5 mb-3 bg-body rounded-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="https://i0.wp.com/meadowbrookmcf.com/wp-content/uploads/2017/07/icon-email-icon-clip-art-at-clker-com-vector-qafaq-e-mail-icon-trace-0.png?ssl=1"
+                style="height: 20px; width: auto"
+                class="me-3"
+                alt="Email Icon"
+              />
+              <div>
+                <h5 class="card-title mb-0">Jane Smith</h5>
+                <p class="card-text">
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>

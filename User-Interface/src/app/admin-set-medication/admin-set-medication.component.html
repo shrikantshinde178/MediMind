@@ -1,0 +1,83 @@
+  <div class="container" [formGroup]="setmed">
+    <h2>Set Patients Medication</h2>
+    <div class="wrap">
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Search Patient">
+            <button type="submit" class="search-icon">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </div>
+    
+    <form action="submit_medication_form" method="post">
+        <p><span>*</span> Indicates all mandatory fields.</p>
+        <div class="form-group">
+            <label for="adminspatientId"><span>*</span> Choose Patient ID:</label>
+            <input type="number" class="form-control" id="adminspatientId" name="adminspatientId" [formControl]="setmed.controls.patid" required>
+        </div>
+        <div class="row form-label">
+            <div class="col-md-6">
+                <label for="medicineN1"><span>*</span> Medicine No.1:</label>
+                <input type="text" class="form-control" id="medicineN1" name="medicineN1" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med1" required>
+            </div>
+            <div class="col-md-6">
+                <label for="medicineN2"><span>*</span> Medicine No.2:</label>
+                <input type="text" class="form-control" id="medicineN2" name="medicineN2" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med2">
+            </div>
+        </div>
+        <div class="row form-label">
+            <div class="col-md-6">
+               <label for="medicineN3">Medicine No.3:</label>
+               <input type="text" class="form-control" id="medicineN3" name="medicineN3" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med3">
+           </div>
+           <div class="col-md-6">
+               <label for="medicineN4">Medicine No.4:</label>
+               <input type="text" class="form-control" id="medicineN4" name="medicineN4" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med4">
+           </div>
+           </div>
+           <div class="row form-label">
+            <div class="col-md-6">
+               <label for="medicineN5">Medicine No.5:</label>
+               <input type="text" class="form-control" id="medicineN5" name="medicineN5" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med5">
+           </div>
+           <div class="col-md-6">
+               <label for="medicineN6">Medicine No.6:</label>
+               <input type="text" class="form-control" id="medicineN6" name="medicineN6" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med6">
+           </div>
+           </div>
+           <div class="row form-label">
+            <div class="col-md-6">
+               <label for="medicineN7">Medicine No.7:</label>
+               <input type="text" class="form-control" id="medicineN7" name="medicineN7" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med7">
+           </div>
+           <div class="col-md-6">
+               <label for="medicineN8">Medicine No.8:</label>
+               <input type="text" class="form-control" id="medicineN8" name="medicineN8" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med8">
+           </div>
+           </div>
+           <div class="row form-label">
+            <div class="col-md-6">
+               <label for="medicineN9">Medicine No.9:</label>
+               <input type="text" class="form-control" id="medicineN9" name="medicineN9" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med9">
+           </div>
+           <div class="col-md-6">
+               <label for="medicineN10">Medicine No.10:</label>
+               <input type="text" class="form-control" id="medicineN10" name="medicineN10" placeholder="Enter Medicine Name" [formControl]="setmed.controls.med10">
+           </div>
+           </div>
+        <button type="submit" class="btn bg-success" (click)="submit()">Submit</button>
+        <button type="submit" class="btn danger ml-3" [routerLink]="['/adminDashboard']">Cancel</button>
+    </form>
+</div>
+
+<ng-template #templateDiv>
+    <div class="modal-header">
+        <h4 class="modal-title">Patient Details</h4>
+        <button type="button" class="close" aria-label="Close" (click)="hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div style="color: green;"> Medications are assigned successfully !</div>
+    </div>
+</ng-template>

@@ -1,0 +1,31 @@
+<!-- login.component.html -->
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-header">
+                    <h2 class="text-center">Admin Login</h2>
+                </div>
+                <div class="card-body" >
+                    <form [formGroup]="loginForm">
+                        <div class="form-group" >
+                            <label for="adminId">Unique ID:</label>
+                            <input type="number" class="form-control" id="adminId" placeholder="Enter your ID" name="adminId" [formControl]="loginForm.controls.username" required>
+                            <!-- [(ngModel)]="adminId" -->
+                        </div>
+                        <div class="form-group" >
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password" name="password" [formControl]="loginForm.controls.password" required>
+                            <!-- [(ngModel)]="password" -->
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block" [routerLink]="['/adminDashboard']" [disabled]="loginForm.controls.password.value == '' || loginForm.controls.username.value == '' ">Login</button>
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <p class="text-center">Don't have an account? <a [routerLink]="['/adminSignup']">Signup</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
